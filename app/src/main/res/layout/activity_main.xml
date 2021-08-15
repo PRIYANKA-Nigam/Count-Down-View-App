@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:orientation="vertical"
+    android:gravity="center" android:padding="16dp"
+    android:layout_height="match_parent" tools:context=".MainActivity"> <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="First Timer" android:textSize="32sp"
+        android:textStyle="bold" android:textColor="@color/PaleGoldenrod"/>
+    <cn.iwgang.countdownview.CountdownView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/c1" android:padding="8dp"
+        app:isShowHour="true" app:isShowMinute="true"
+        app:isShowSecond="true" app:timeTextSize="32sp"
+        app:suffixTextSize="32sp"/>
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Second Timer" android:textSize="32sp"
+        android:textStyle="bold" android:textColor="@color/PaleGoldenrod"/>
+    <cn.iwgang.countdownview.CountdownView
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/c2" android:padding="8dp"
+        app:isShowDay="true" app:isShowSecond="true"
+        app:isShowHour="true" app:isShowMinute="true"
+        app:timeTextSize="32sp" app:timeTextColor="@color/teal"
+        app:suffixDay="d" app:suffixHour="h"
+        app:suffixMinute="m" app:suffixSecond="s"
+        app:suffixGravity="center" app:suffixTextSize="24sp"
+        app:suffixTextColor="@color/teal"/>
+</LinearLayout>
